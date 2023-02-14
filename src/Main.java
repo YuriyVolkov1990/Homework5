@@ -3,7 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
-        //task4();
+        task4();
         //task5();
         //task6();
         //task7();
@@ -71,6 +71,23 @@ public class Main {
                 break;
             default:
                 System.out.println(year + " год не является високосным");
+            }
+        }
+        public static void task4() {
+            System.out.println("Задача 4");
+            int deliveryDistance, deliveryTime;
+            deliveryDistance= 61;
+            deliveryTime = 1;
+            if (deliveryDistance > 0 && deliveryDistance <= 20) {
+                System.out.println("Потребуется дней: " + deliveryTime);
+                } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+                deliveryTime = deliveryTime + 1;
+                System.out.println("Потребуется дней: " + deliveryTime);
+                } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+                deliveryTime = deliveryTime + 2;
+                System.out.println("Потребуется дней: " + deliveryTime);
+                } else {
+                System.out.println("Свыше 100 км доставки нет");
+            }
         }
     }
-}
