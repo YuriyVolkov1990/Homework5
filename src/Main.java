@@ -90,7 +90,7 @@ public class Main {
         }
     public static void task5() {
         System.out.println("Задача 5");
-        int monthNumber;
+        byte monthNumber;
         monthNumber = 12;
         switch (monthNumber) {
             case 1:
